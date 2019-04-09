@@ -1,0 +1,66 @@
+\documentclass%
+[aspectratio=1610]%
+{beamer}
+
+\usepackage{hyperref}
+
+\usepackage[
+    locale=DE,
+    separate-uncertainty=true,  % use \pm
+    per-mode=symbol-or-fraction,
+    %per-mode=reciprocal,
+    %output-decimal-marker=.,
+]{siunitx}
+
+\usepackage{subfig} 
+%The pack­age pro­vides sup­port for the ma­nip­u­la­tion and ref­er­ence 
+%of small or ‘sub’ fig­ures and ta­bles within a sin­gle fig­ure or ta­ble en­vi­ron­ment. 
+%It is con­ve­nient to use this pack­age when your sub­fig­ures are to be sep­a­rately cap­tioned, 
+%ref­er­enced, or are to be in­cluded in the List-of-Fig­ures. A new \sub­fig­ure com­mand 
+%is in­tro­duced which can be used in­side a fig­ure en­vi­ron­ment for each sub­fig­ure. 
+%An op­tional first ar­gu­ment is used as the cap­tion for that sub­fig­ure. 
+
+\usepackage{lmodern}
+%freie Skallierbarkeit der Schriftgröße mit {\fontsize{Fontgröße}{Grundlinienabstand} \selectfont}
+
+\usepackage{amssymb}
+%Das Paket amssymb stellt einen erweiterten Weg dar alle Zeichen aus msam und msmb nutzbar zu machen.
+
+\usepackage{mathtools}
+%lädt amsmath selber, \usefonttheme{professionalfonts}
+
+\usepackage{fontspec}
+%Fontspec is a pack­age for XeLaTeX and LuaLaTeX. It pro­vides an au­to­matic and uni­fied in­ter­face 
+%to fea­ture-rich AAT and OpenType fonts through the NFSS in LaTeX run­ning on XeTeX or LuaTeX en­gines
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\usepackage{csquotes}
+
+\usepackage{tikz}
+
+\usepackage{xcolor}
+
+% Attempts to make animation work
+% \usepackage{movie15}
+%\usepackage{animate}
+
+\institute[Tutorium]
+
+\usepackage[
+    math-style=ISO,
+    bold-style=ISO,
+    nabla=upright,
+    partial=upright,
+    sans-style=italic,
+]{unicode-math}
+
+% \setmainfont{Fira Sans}
+% \setmathfont{Fira Math}
+% Nutzt Max Nöthe
+
+\usetheme{tudo}
+% Thanks Max
+
+\title{Tutorium SS 19}
+\author[M. Bourgett \& J.Herdieckerhoff]{Jan Herdieckerhoff und Mirjam Bourgett}
+\date{April 2019}
