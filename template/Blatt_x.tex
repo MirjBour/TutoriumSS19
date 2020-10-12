@@ -1,0 +1,97 @@
+\documentclass[11pt,a4paper, parskip=half ]{report}
+\usepackage[aux]{rerunfilecheck}
+\usepackage{polyglossia}
+\setmainlanguage{german}
+\usepackage[utf8x]{inputenc}
+%\usepackage{floatflt}
+\usepackage{float}
+\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}
+\pagestyle{empty}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xparse}
+\usepackage{braket}
+\usepackage{units}
+\usepackage[locale=DE,separate-uncertainty=true,per-mode=reciprocal,output-decimal-marker={,},]{siunitx}
+\usepackage[section]{placeins}
+\usepackage{pdflscape}
+\usepackage{expl3}
+\usepackage{bookmark}
+\usepackage{sidecap}
+%Komma als Dezimaltrenner in der mathe Umgebung, um in Umgebungen wie [0, 2] ein Leerzeichen nach dem Komma zu erhalten einfach eins setzen
+\usepackage{icomma}
+\textwidth16.5cm
+\textheight26.5cm
+\oddsidemargin0cm \evensidemargin-0.5cm \topmargin-1.5cm
+\setlength{\parindent}{0pt}
+
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand{\Einheit}[1]{\ensuremath{\,\mathrm{#1}}}
+\newcommand{\FracEinheit}[2]{\ensuremath{\,\frac{\mathrm{#1}}{\mathrm{#2}}}}
+\newcommand{\difft}{\ensuremath{\,\frac{\mathrm{d}}{\mathrm{d}t}}\,}
+\newcommand{\diffpr}{\ensuremath{\,\frac{\partial}{\partial r}}\,}
+\newcommand{\diffptheta}{\ensuremath{\,\frac{\partial}{\partial \theta}}\,}
+\newcommand{\diffpptheta}{\ensuremath{\,\frac{\partial^2}{\partial \theta^2}}\,}
+\newcommand{\diffpphi}{\ensuremath{\,\frac{\partial}{\partial \phi}}\,}
+\newcommand{\diffppphi}{\ensuremath{\,\frac{\partial^2}{\partial \phi^2}}\,}
+\newcommand{\difftt}{\ensuremath{\,\frac{\mathrm{d}^2}{\mathrm{d}t^2}}\,}
+\newcommand{\diffx}{\ensuremath{\,\frac{\mathrm{d}}{\mathrm{d}x}}\,}
+\newcommand{\diffxx}{\ensuremath{\,\frac{\mathrm{d}^2}{\mathrm{d}x^2}}\,}
+\newcommand{\vek}[2]{\ensuremath{\left( \begin{array}{c}#1\\#2\end{array} \right)}}
+\newcommand{\vektor}[3]{\ensuremath{\left( \begin{array}{c}#1\\#2\\#3\end{array} \right)}}
+\newcommand{\KleinerAbstand}{\\[5pt]}
+\newcommand{\GrosserAbstand}{\\[12pt]}
+\newcommand{\NaechsteSeite}{\begin{flushright}\textit{bitte wenden!}\end{flushright}\newpage}
+\newcommand{\NaechstesBlatt}{\begin{flushright}\textit{weiter auf zweitem Blatt!}\end{flushright}\newpage}
+\graphicspath{{../Bilder/}}
+%\hyphenation{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Deklarierung eigenere Operatoren%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Rot}{rot}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\includegraphics[width=\textwidth]{logo_tu_fp.png}
+%\GrosserAbstand
+\begin{center}
+\Large{\textbf{x. \"Ubungsblatt zum Vorkurs Physik I}}
+\GrosserAbstand
+\normalsize
+Wintersemester 2020/21 \hfill Prof. Dr. Carsten Westphal\\
+\textbf{Für den x.x.2020} \hfill Prof. Dr. Jan Kierfeld \\
+\end{center}
+
+%
+%
+% * * * * * * * * * * * * * * * * * * * * *
+%  AUFGABE 1
+% * * * * * * * * * * * * * * * * * * * * *
+%
+%
+
+\section*{Aufgabe 1: Beispiel}
+  Warum ist der Himmel blau?
+  \begin{enumerate}
+    \item Weil Blau eine schöne Farbe ist
+    \item Die Sonne ist eigentlich blau
+    \item Wegen der Frequenzabhängigkeit der Rayleigh-Streuung
+  \end{enumerate}
+
+\vfill
+\begin{flushright}\textit{Seite 1 von 2}\end{flushright}\newpage
+
+
+
+\vfill
+\begin{flushright}\textit{Seite 2 von 2}\end{flushright}%\newpage
+
+\end{document}
