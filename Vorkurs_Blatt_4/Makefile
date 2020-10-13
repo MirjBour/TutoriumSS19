@@ -1,4 +1,4 @@
-NUMMER = x
+NUMMER = 4
 
 all: Blatt_$(NUMMER).pdf
 
