@@ -90,13 +90,20 @@ Wintersemester 2020/21 \hfill Prof. Dr. Carsten Westphal\\
 \begin{enumerate}
   \item Bestimmen Sie die Extrempunkte der Funktion f mit $f(x) = e^{2x} + e^{-x}$.
   \vspace{20pt}
-  \\Bestimmung der Ableitungen:	$f′(x) =  2e^{2x} - e^{-x}$, $f′′(x) =  4e^{2x} + e^{-x}$	(immer größer Null)\\
+  \\Bestimmung der Ableitungen:	$f^{\prime}(x) =  2e^{2x} - e^{-x}$, $f^{\prime\prime}(x) =  4e^{2x} + e^{-x}$	(immer größer Null)\\
 	Notwendige Bedingung für einen Extrempunkt:\\  
-			$f′(x) = 0	\Leftrightarrow  2e^{2x} - e^{-x} = 0 |\cdot e^x  	\Leftrightarrow 2e^{3x} – 1 = 0  \Leftrightarrow     2e^{3x} = 1
+			$f^{\prime}(x) = 0	\Leftrightarrow  2e^{2x} - e^{-x} = 0 |\cdot e^x  	\Leftrightarrow 2e^{3x} – 1 = 0  \Leftrightarrow     2e^{3x} = 1
 			\Leftrightarrow x= \frac{1}{3} \ln(0.5) = -0.231$\\				
 	Da f‘‘ > 0 (linksgekrümmt), liegt ein Tiefpunkt vor:	Tiefpunkt T(-0.231|2.52) 
 
   \item Bestimmen Sie den Wendepunkt der Funktion f mit $f(x) = (x-1)\cdot e^x$.
+  \vspace{20pt}
+  \\Bestimmung der Ableitungen:  $f^{\prime}(x) = e^x + (x-1)\cdot e^x = (1+x-1)\cdot e^x = x\cdot e^x$, $f^{\prime\prime}(x) = e^x + x\cdot e^x = (x+1)\cdot e^x$	
+  \\Notwendige und hinreichende Bedingung für einen Wendepunkt:  
+  \\$f^{\prime\prime}(x) = 0	\Leftrightarrow   (x +1)\cdot e^x = 0   \Leftrightarrow x = -1$
+  \\$f^{\prime\prime}(0) = 1> 0$, $f^{\prime\prime}(-2) = -e^{-2}< 0   \Rightarrow$ VZW von f′′ von + nach - an der Stelle \num{-1}	
+  \\Wendepunkt W(-1|-0.736) 	
+
 \end{enumerate}
 
 \section*{Aufgabe 3: Und weil's so schön war Kurvendiskussion}
@@ -105,7 +112,18 @@ Wintersemester 2020/21 \hfill Prof. Dr. Carsten Westphal\\
   \begin{figure}
     \includegraphics{media/Bild1.png}
   \end{figure}
+  \vspace{20pt}
+  \\Betrachte Asymptotik des Graphen: mit $\lim_{x\rightarrow\infty} e^{-x} = 0 \Rightarrow b = 3$.
+  \\Aus f(0) = 1 folgt a = -2.	
   \item Gegeben sind die Funktionen f und g mit $f(x) = \frac{1}{1-x}+3$ und $g(x)=-\frac{1}{1+x}$.	Geben Sie die waagrechte Asymptote der Funktion f an und bestimmen Sie die Stelle, an der f und g  die gleiche Steigung haben.
+  \vspace{20pt}
+  \\Betrachte Verhalten für $+\infty$ und $-\infty$ $\Rightarrow$ f(x) hat die waagrechte Asymptote y = 3.
+  \\Bestimmung der Ableitungen:	
+  \\$f(x) = (1-x)^{-1}+3$, $f^{\prime}(x) = (1-x)^{-2} = \frac{1}{(1-x)^2}$ 
+  \\$g(x) = -(1+x)^{-1}$, $g^{\prime}(x) = (1+x)^{-2} = \frac{1}{(1+x)^2}$      
+  \\Ableitungen gleichsetzen:
+  \\$f^{\prime}(x) = g^{\prime}(x)   \Leftrightarrow 	(1+x)^2 = (1-x)^2 \Leftrightarrow 1+2x+x^2 = 1-2x+x^2 \Leftrightarrow 2x = -2x \Leftrightarrow x = 0$	
+
 \end{enumerate}
  
 \vfill
